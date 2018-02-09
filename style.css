@@ -1,0 +1,99 @@
+* {
+  transition: .25s all;
+  -webkit-transition: .25s all;
+  -moz-transition: .25s all;
+  -ms-transition: .25s all;
+  -o-transition: .25s all;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.accordion-wrap {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background: #f6f6f6;
+  border-top: 4px solid #26cbb2;
+}
+.accordion {
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.acc {
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+.acc h4 {
+  font: normal bold 20px/30px 'Arial', sans-serif;
+  color: #444;
+  padding: 20px 25px;
+  background: #e3e3e3;
+  border-bottom: 2px solid #999;
+  cursor: pointer;
+  margin: 0;
+}
+.acc h4 span {
+  padding: 0 10px 0 0;
+  display: block;
+  float: right;
+}
+.acc:hover h4 {
+  color: #28ae9a;
+}
+.acc.open h4 {
+  color: #28ae9a;
+  border-bottom: 2px solid #28ae9a;
+}
+.acc:hover h4 span {
+  padding: 0 0 0 20px;
+}
+.acc.open h4 span {
+  transform: rotate(90deg);
+  padding: 10px 0 0 0;
+}
+.acc .exp {
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  padding: 0 25px;
+}
+.acc.open .exp {
+  height: auto;
+  padding: 25px;
+  background: #fff;
+}
+.acc .exp p {
+  font: normal normal 14px/24px 'Arial', sans-serif;
+  padding: 10px 0;
+  margin: 0;
+  color: #444;
+}
+.acc .exp table {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background: #f1f1f1;
+  border: 0;
+  margin: 25px 0;
+}
+.acc .exp table th {
+  border: 0;
+  padding: 15px 20px;
+  text-align: left;
+  font: normal bold 14px/24px 'Arial', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+}
+.acc .exp table td {
+  border: 0;
+  padding: 8px 20px;
+  text-align: left;
+  font: normal normal 14px/24px 'Arial', sans-serif;
+  color: #555;
+}
+.acc .exp table tr:nth-child(even) td {
+  background: #fff;
+}
